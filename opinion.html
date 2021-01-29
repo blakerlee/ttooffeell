@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>opinion</title>
+        <link href∫="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" 
+                rel="stylesheet" type="text/css"/><!--웹에서 폰트 가져오기-->
+
+        <style>
+            #title{
+                    font-family: 'Yellowtail', cursive;
+                    font-size: larger;}
+                </style><!--타이틀 코드-->        
+
+        <style>
+            *{ margin: 0; padding: 0;}
+            body{ font-family: sans-serif;}
+            li{ list-style: none;}
+            a{ text-decoration: none;}
+            img{ border: 0;}
+        </style><!--초기화코드-->
+
+        <style>
+            #main_header{
+                width: 960px;
+                margin: 0 auto;
+                height: 160px;
+                position: relative;  
+            }
+            #main_header > #title{
+                position: absolute;
+                left: 20px; top: 30px;
+            }
+            #main_header > #main_gnb{
+                position: absolute;
+                right: 0; top: 0;
+            }
+            #main_header > #main_lnb{
+                position: absolute;
+                right: 0; bottom: 10px;
+            }
+        </style><!--main_header(제목,gnb,lnb 위치조정)-->
+        <style>
+            #main_gnb > ul{overflow: hidden;}
+            #main_gnb > ul > li{float: left;}
+            #main_gnb > ul > li > a{
+                display: block;
+                padding: 2px 10px;
+                border: 1px solid black;
+                
+            }
+            #main_gnb > ul > li > a:hover{
+                background: black;
+                color: white;
+            }
+            #main_gnb > ul > li:first-child > a{ border-radius: 10px 0 0 10px;}
+            #main_gnb > ul > li:last-child > a{ border-radius: 0 10px 10px 0;}
+        </style>
+               <style>
+                #main_lnb > ul{overflow: hidden;}
+                #main_lnb > ul > li{float: left;}
+                #main_lnb > ul > li > a{
+                    display: block;
+                    padding: 10px 20px;
+                    border: 2px solid black;
+                }
+                #main_lnb > ul > li > a:hover{
+                    background: black;
+                    color: white;
+                }
+                #main_lnb > ul > li:first-child > a{ border-radius: 10px 0 0 10px;}
+                #main_lnb > ul > li:last-child > a{ border-radius: 0 10px 10px 0;}
+            </style>
+        <style>
+            #content{ 
+                width: 960px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+        </style><!--content코드-->
+
+        <style>
+            #main_section{
+                width: 750px;
+                float: left;
+                border: 1px solid black;
+            }
+            #main_aside{ 
+                position: relative;
+                width: 200px;
+                float: right;
+                border: 1px solid black;
+
+
+            }
+        </style><!--section과aside나누기-->
+
+        <style>
+            #main_section > article.main_article{ 
+                margin-bottom: 10px;
+                padding: 20px;
+            }
+        </style><!--section 단락 별로 공간 주기-->
+        
+
+        <style>
+            #main_footer{
+                width: 960px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                padding: 10px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="main_header">
+            <div id="title">
+                <h1>TOEFL</h1>
+                <h2>TEMPLATE</h2>
+            </div>
+            <nav id="main_gnb">
+                <ul>
+                    <li><a href="home.html">홈</a></li>
+                    <li><a href="https://dict.naver.com" target="blank">네이버사전</a></li>
+                    <li><a href="http://www.daum.net" target="blank">심심할때보는영상</a></li>
+                    <li><a href="http://www.youtube.com" target="blank">유튜브</a></li>
+                </ul>
+            </nav>
+            <nav id="main_lnb">
+                <ul>
+                    <li><a href="answer.html">주제별답변</a></li>
+                    <li><a href="school.html">학교관련표현</a></li>
+                    <li><a href="noun.html">명사표현</a></li>
+                    <li><a href="lecture.html">강의표현</a></li>
+                    <li><a href="opinion.html">의견표현</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="content">
+        <section id="main_section">
+ 
+        <article class="main_article">
+            <h1 id="의견">[의견]</h1>
+            <p>(1) I’m all for the library’s new policy on renewing books.<br>
+                난 대출 기한 연장에 대한 도서관의 새로운 정책에 전적으로 동의해.<br><br>
+                (2) This policy is definitely not the way to go.<br>
+                이 정책은 절대 좋은 방법이 아니야.<br><br>
+                (3) He’s got some good reasons for asking for a ban.<br>
+                그가 금지를 요청하는 데에는 타당한 이유가 있어.<br><br>
+                (4) I’m not so sure that the decision makes sense.<br>
+                난 그 결정이 이치에 맞는지 잘 모르겠어.<br><br>
+                (5) I’m not convinced that this will really benefit students.<br>
+                이게 학생들에게 정말 이로울지 확신이 안 서.<br><br>
+                (6) I’m totally against putting photographs on display in the dining halls.<br>
+                난 사진을 식당에 전시하는 것에 전적으로 반대야.<br><br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="선호">[선호]</h1>
+            <p>(1) I prefer a laptop to a desktop.<br>
+                나는 데스크톱 컴퓨터보다 노트북을 선호한다.<br><br>
+                (2) he prefers to take the bus rather than to drive.<br>
+                그는 운전하는 것보다 버스타는 것을 선호한다.<br><br>
+                (3) It is better to eat out than to prepare your own meals.<br>
+                자신의 음식을 준비하는 것보다 외식하는 것이 낫다.<br><br>
+                (4) Living in a big city is better than living in a small town.<br>
+                대도시에 사는 것이 작은 마을에 사는 것보다 낫다.<br><br>
+                (5) In my opinion(내 생각에는)<br><br>
+                (6) I like A more than B<br><br>
+                (7) I think/ believe/ feel that~<br><br>
+                (8) Some people don't like living in the dorms. In my case, however, it was the best year of my life.<br>
+                어떤 사람들은 기숙사에 사는 것을 좋아하지 않는다. 하지만 내 경우에는, 그때가 내 생애 최고의 해였다.<br><br>
+                (9) From my experience, it's hard to live with a roommate who has a different schedule from mine.<br>
+                내 경험으로 보면, 나와 시간표가 다른 룸메이트와 함께 사는 것은 힘들다.<br><br>
+                (10) I personally learned a lot from working at the library.<br>
+                도서관에서 일을 하면서 개인적으로 많은 것을 배웠다.<br><br>
+                (11) For me, watching American movies is a good way to study English.<br>
+                나로서는, 미국 영화를 보는 것이 영어를 공부하는 좋은 방법이다.<br><br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="이유">[이유]</h1>
+            <p>너무 쉬운 내용임</p>
+        </article>
+        <article class="main_article">
+            <h1 id="문제점">[문제점]</h1>
+            <p>(1) I’m really worried about a project for one of my classes.<br>
+                나는 한 수업에서의 프로젝트가 정말 걱정돼.<br><br>
+                (2) I’m afraid that we won’t be able to spend enough time on the material.<br>
+                우리가 그 자료에 충분한 시간을 할애하지 못할까 봐 걱정이야.<br><br>
+                (3) My problem is that I freeze up when I speak in front of large audiences.<br>
+                내 문제점은 많은 청중들 앞에서 말할 때면 몸이 얼어붙는다는 거야.<br><br>
+                (4) I don’t think that I will get all my reading done on time.<br>
+                제시간에 독서를 다 하지 못할 것 같아.<br><br>
+                (5) It’s hard for me to concentrate in my dorm.<br>
+                난 기숙사에선 집중하기가 힘들어.<br><br>
+                (6) I’m concerned that I might not be able to get to my finance lecture on time.<br>
+                재정학 강의에 시간 맞춰 갈 수 없을지도 몰라서 걱정이야.<br><br>
+                (7) The student has a problem registering for classes.<br>
+                학생은 수업에 등록하는데 문제가 있다.<br><br>
+                (8) The man is in trouble because he failed his midterm exam.<br>
+                그는 중간고가에서 낙제한 것 때문에 곤란하다.<br><br>
+                (9) I have a hard time concertrating in noisy cafes.<br>
+                나는 시끄러운 카페에서 집중하는 데 어려움이 있다.<br><br>
+                (10) She wants to go on a trip, but she has to work.<br>
+                그녀는 여행을 가고 싶어하지만, 일해야만 한다.<br><br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="제안">[제안]</h1>
+            <p>(1) Why don’t you ask the professor for an extension on your deadline?<br>
+                교수님한테 마감일을 연장해 달라고 하는 게 어때?<br><br>
+                (2) How about asking another one of your coworkers to cover for you?<br>
+                다른 동료들 중 한 명에게 대신해 달라고 부탁하는 게 어때?<br><br>
+                (3) You should try working out at the gym.<br>
+                체육관에 가서 운동해 보는 게 좋겠어.<br><br>
+                (4) You could think about selling your used textbooks at the bookstore.<br>
+                헌 교재들을 서점에 파는 것에 대해 생각해 봐.<br><br>
+                (6) Why not skip this concert and go to the next one?<br>
+                이번 콘서트는 건너뛰고 다음 걸 가는게 어때?<br><br>
+                (7) Another option is to ask to borrow his keys.<br>
+                그에게 열쇠를 빌리겠다고 부탁하는 것도 또 다른 방법이야.<br><br>
+                (8) Another thing you might do is apply for a job at the library.<br>
+                네가 할 수 있는 또 다른 건 도서관 일자리에 지원하는 거야.<br><br>
+                (9) He suggests borrowing a classmate's textbook.<br>
+                그는 반 친구의 교과서를 빌리는 것을 제안한다.<br><br>
+                (10) She suggests that he go to the doctor.<br>
+                그녀는 그에게 의사에게 가보라고 제안한다.<br><br>
+                (11) His tutor advises him to take a writing course.<br>
+                그의 개인교사는 그에게 작문 수업을 들으라고 조언한다.<br><br>
+                (12) Her first(second) suggestion is to drink hot tea.<br>
+                그녀의 첫번째(두번째) 제안은 따뜻한 차를 마시라는 것이다.<br><br></p>
+        </article>
+        </section>
+
+
+        <aside id="main_aside">
+            <div class="tab_item">
+                <ul>
+                    <li><a href="#의견">의견</a></li>
+                    <li><a href="#선호">선호</a></li>
+                    <li><a href="#이유">이유</a></li>
+                    <li><a href="#문제점">문제점</a></li> 
+                    <li><a href="#제안">제안</a></li>   
+                </ul>
+            </div>
+        </aside>
+        </div>
+        <footer id="main_footer">
+            <h1>TOEFL SPEAKING AND WRITING</h1>
+            <address>Expressions and tips</address>
+        </footer>
+    </body>
+</html>

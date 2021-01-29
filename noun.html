@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>noun</title>
+        <link href∫="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" 
+                rel="stylesheet" type="text/css"/><!--웹에서 폰트 가져오기-->
+
+        <style>
+            #title{
+                    font-family: 'Yellowtail', cursive;
+                    font-size: larger;}
+                </style><!--타이틀 코드-->        
+
+        <style>
+            *{ margin: 0; padding: 0;}
+            body{ font-family: sans-serif;}
+            li{ list-style: none;}
+            a{ text-decoration: none;}
+            img{ border: 0;}
+        </style><!--초기화코드-->
+
+        <style>
+            #main_header{
+                width: 960px;
+                margin: 0 auto;
+                height: 160px;
+                position: relative;  
+            }
+            #main_header > #title{
+                position: absolute;
+                left: 20px; top: 30px;
+            }
+            #main_header > #main_gnb{
+                position: absolute;
+                right: 0; top: 0;
+            }
+            #main_header > #main_lnb{
+                position: absolute;
+                right: 0; bottom: 10px;
+            }
+        </style><!--main_header(제목,gnb,lnb 위치조정)-->
+        <style>
+            #main_gnb > ul{overflow: hidden;}
+            #main_gnb > ul > li{float: left;}
+            #main_gnb > ul > li > a{
+                display: block;
+                padding: 2px 10px;
+                border: 1px solid black;
+                
+            }
+            #main_gnb > ul > li > a:hover{
+                background: black;
+                color: white;
+            }
+            #main_gnb > ul > li:first-child > a{ border-radius: 10px 0 0 10px;}
+            #main_gnb > ul > li:last-child > a{ border-radius: 0 10px 10px 0;}
+        </style>
+               <style>
+                #main_lnb > ul{overflow: hidden;}
+                #main_lnb > ul > li{float: left;}
+                #main_lnb > ul > li > a{
+                    display: block;
+                    padding: 10px 20px;
+                    border: 2px solid black;
+                }
+                #main_lnb > ul > li > a:hover{
+                    background: black;
+                    color: white;
+                }
+                #main_lnb > ul > li:first-child > a{ border-radius: 10px 0 0 10px;}
+                #main_lnb > ul > li:last-child > a{ border-radius: 0 10px 10px 0;}
+            </style>
+        <style>
+            #content{ 
+                width: 960px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+        </style><!--content코드-->
+
+        <style>
+            #main_section{
+                width: 750px;
+                float: left;
+                border: 1px solid black;
+            }
+            #main_aside{ 
+                position: relative;
+                width: 200px;
+                float: right;
+                border: 1px solid black;
+
+
+            }
+        </style><!--section과aside나누기-->
+
+        <style>
+            #main_section > article.main_article{ 
+                margin-bottom: 10px;
+                padding: 20px;
+            }
+        </style><!--section 단락 별로 공간 주기-->
+        
+
+        <style>
+            #main_footer{
+                width: 960px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                padding: 10px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="main_header">
+            <div id="title">
+                <h1>TOEFL</h1>
+                <h2>TEMPLATE</h2>
+            </div>
+            <nav id="main_gnb">
+                <ul>
+                    <li><a href="home.html">홈</a></li>
+                    <li><a href="https://dict.naver.com" target="blank">네이버사전</a></li>
+                    <li><a href="http://www.daum.net" target="blank">심심할때보는영상</a></li>
+                    <li><a href="http://www.youtube.com" target="blank">유튜브</a></li>
+                </ul>
+            </nav>
+            <nav id="main_lnb">
+                <ul>
+                    <li><a href="answer.html">주제별답변</a></li>
+                    <li><a href="school.html">학교관련표현</a></li>
+                    <li><a href="noun.html">명사표현</a></li>
+                    <li><a href="lecture.html">강의표현</a></li>
+                    <li><a href="opinion.html">의견표현</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="content">
+        <section id="main_section">
+ 
+        <article class="main_article">
+            <h1 id="인물">[인물]</h1>
+            <p>[사람]<br>
+                (1) My mother is a mentor to me.<br>
+                나의 어머니는 나에게 조언자이시다.<br><br>
+                (2) Tiger woods is a role model for many young golfers.<br>
+                타이거 우즈는 많은 젊은 골프선수들의 역할모델이다.<br><br>
+                (3) My father is the most influential person in my life.<br>
+                나의 아버지는 나의 인생에서 가장 영향력 있는 분이시다.<br><br>
+                (4) His great personality made him a memorable teacher.<br>
+                그분의 좋은 성격은 그를 기억에 남는 선생님으로 만들었다.<br><br>
+                (5) Matt is a friend for a lifetime who will always be with me.<br>
+                matt은 내 곁에 항상 있어 줄 평생친구이다.<br><br>
+                (6) The person who(m) I admire most is my sixth grade teacher.<br>
+                내가 가장 좋아하는 사람은 나의 6학년 때 선생님이다.<br><br>
+                (7) I have a good relationship with my colleagues.<br>
+                나는 나의 동료들과 좋은 관계에 있다.<br><br>
+                (8) To fulfill their roles as mentors, parents should set a good example.<br>
+                조언자로서의 역할을 다하기 위해서, 부모는 모범을 보여야 한다.<br><br>
+                (9) A face-to-face conversation with a professor is more effective than corresponding by e-mail.<br>
+                교수님과 대면하여 대화하는 것이 이메일을 주고받는 것보다 효과적이다.<br><br>
+                (10) Living in different cities or countries can often disrupt relationships.<br>
+                다른 도시나 나라에 사는 것은 종종 관계를 분열시킬 수 있다.<br><br>
+                (11) Students who hang out with friends often get together in coffee shops.<br>
+                친구들과 어울리는 학생들은 종종 커피숍에서 모인다.<br><br>
+                (12) Trading ideas in a study group is a good way to prepare for tests.<br>
+                스터디 그룹에서 의견을 나누는 것은 시험에 대비하기 위한 좋은 방법이다.<br><br>
+                (13) A person's choice of college can affect the rest of his or her life.<br>
+                한 사람의 대학 선택은 그 사람의 여생에 영향을 미칠 수 있다.<br><br>
+                (14) It is polite to show your appreciation for a gift with a thank-you card.<br>
+                감사 카드로 선물에 대한 고마움을 표현하는 것은 예의 바른 일이다.<br><br>
+                (15) The elderly and young people usually hold different positions on what "good music" is.<br>
+                나이 든 사람들과 젊은 사람들은 보통 무엇이 "좋은 음악"인지에 대해 다른 입장을 취한다.<br><br>
+                (16) Parents should be more involved in their children's education.<br>
+                부모들은 자녀들의 교육에 더 많이 관여해야 한다.<br><br>
+                (17) Students who feel nervous tend to make careless mistakes during examinations.<br>
+                긴장한 학생들은 시험을 치르는 동안 부조의한 실수를 하는 경향이 있다.<br><br>
+                (18) It's easy to come down with the flu in wintertime.<br>
+                겨울철에는 독감에 걸리기 쉽다.<br><br>
+                (19) I try not to take part in activities that are a waste of time, like chatting online.<br>
+                나는 온라인 채팅같이 시간 낭비인 활동에는 참여하지 않으려고 한다.<br><br>
+                (20) Doing volunteer work gives you a real sense of accomplishment.<br>
+                자원봉사를 하는 것은 진정한 성취감을 느끼게 해준다.<br><br>
+                (21) People who share a house should do chores equally.<br>
+                한집에 같이 사는 사람들은 집안일을 공평하게 해야 한다.<br><br>
+                (22) When it comes to college life, learning self-control is very important.<br>
+                대학 생화에서는 자기 관리를 배우는 것이 매우 중요하다.<br><br>
+                (23) There are a lot of things to consider when purchasing a house.<br>
+                집을 구입할 때는 고려해야 할 요소가 많다.<br><br>
+                (24) Reading a good book in a comfortable cafe is an enjoyable way to relieve stress.<br>
+                편안한 카페에서 좋은 책을 읽는 것은 스트레스를 푸는 즐거운 방법이다.<br><br>
+                 
+                [특징]<br>
+                (1) Writing a book is an outstanding achievement.<br>
+                책을 쓰는 것은 놀라운 업적이다.<br><br>
+                (2) I like Oprah Winfrey for her great personality.<br>
+                나는 오프라 윈프리의 멋진 성격 때문에 그녀를 좋아한다.<br><br>
+                (3) Most successful people have a positive outlook.<br>
+                대부분의 성공한 사람들은 긍정적인 시각을 가지고 있다.<br><br>
+                (4) People who are under a lot of pressure often make hasty decisions.<br>
+                많은 압박감을 받는 사람들은 종종 성급한 결정을 내린다.<br><br>
+                [Student]<br>
+                (1) No money –take a lot of money-cannot afford it<br><br>
+                (2) No time – many assignments<br><br>
+                (3) Stress-have to relieve<br><br>
+                ex) my school is so tough because it is one of top universities where many students study a lot. If I don't focus on my study, it's very hard to get good grades. So, I am really exhausted from hard work<br><br>
+                [유명인-책]<br>
+                ex) I read an article about Bill Gate. His story was very interesting and helped me get highly motivated. From his story, I got to know that learning new technologies is a great way for success.<br><br>
+                [미리준비]<br>
+                ex) my friend had a chance to give a presentation in his class. He wasn't prepared and did poorly. In fact, he was so embarrassed because nobody didn't focus on his presentation. So I don't want him to have the same mistake.<br><br>
+                [공부-같이]<br>
+                ex) when I was in math class, we got together around a table and exchanged our ideas. It was very effective because we found out several solutions of problems that we couldn't solve individually.<br><br>
+                [존경, 감사]<br>
+                ex) I learned how to respect and appreciate differences between people. I’m sure it helped me broaden my perspectives toward the world as well.<br><br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="물건">[물건]</h1>
+            <p>[일반적인 물건]<br>
+                (1) I treasure my ring so much.<br>
+                나는 나의 반지를 아주 소중히 여긴다.<br><br>
+                (2) A laptop is the most important item for traveling businessmen.<br>
+                노트북 컴퓨터는 여행하는 사업가들에게 가장 중요한 물건이다.<br><br>
+                (3) A sofa is of practical use because it can also be used as a bed.<br>
+                소파는 또한 침대로도 사용될 수 있기 때문에 실용적이다.<br><br>
+                (4) He wears really outdated clothes.<br>
+                그는 정말 오래된 옷을 입는다.<br><br>
+                (5) I inherited my piano from my mother.<br>
+                나는 내 피아노를 나의 어머니로부터 물려받았다.<br><br>
+                (6) With credit cards, it is easy to spend a fortune on unnecessary items.<br>
+                신용카드가 있으면, 불필요한 물건에 많은 돈을 쓰기 쉽다.<br><br>
+                (7) There are many ways people use their hard-earned money wisely.<br>
+                어렵게 번 돈을 사람들이 현명하게 쓸 수 있는 방법은 많다.<br><br>
+                [문화/여가]<br>
+                (1) Comedy is my favorite movie genre because it relieves stress.<br>
+                코미디는 스트레스를 덜어주기 때문에 내가 좋아하는 영화 장르이다.<br><br>
+                (2) The Alchemist is the most impressive book I have ever read.<br>
+                연금술사는 내가 읽었던 것 중에서 가장 감명 깊은 책이다.<br><br>
+                (3) I am going to see a movie recommended by my friend.<br>
+                나는 내 친구가 추천한 영화를 보러 갈 것이다.<br><br>
+                (4) I tried not to lose any personal belongings during my travels.<br>
+                나는 여행하는 동안 개인 소지품을 잃어버리지 않도록 노력했다.<br><br>
+                (5) A traditional food in Japan is sushi.<br>
+                일본의 전통 음식은 스시이다.<br><br>
+                [뮤지엄-재미]<br>
+                ex) I went to Science Museum at Chicago with my friends. We had so much fun because we attended several classes that the museum provided. we learned about the importance and benefits in science.<br><br>
+                [놀이-테니스]<br>
+                ex) For example, I played tennis a few month ago. In the game, I met different people and got to know them. To win the game, we felt like that we could do anything that we wanted. It was a really great feeling.<br><br>
+                [실용지식]<br>
+                ex) Computers are key elements in many industries, because they improve productivity tremendously. So, people who can work with computers very well are in high demand.<br><br>
+                [돈]<br>
+                ex) Because, money is very important to me. For example my parents always work hard and come back home too late. So if I make huge money, I can contribute to my family’s living, and my parents would be happy about that.<br><br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="사건">[사건]</h1>
+            <p>[기념일]<br>
+                (1) My father booked a restaurant to celebrate my high school graduation.<br>
+                나의 아버지는 나의 고등학교 졸업을 축하하기 위하여 식당을 예약하셨다.<br><br>
+                (2) All my high school friends got together at the reunion.<br>
+                모든 나의 고등학교 친구들은 동창회에 모였다.<br><br>
+                (3) I dress formally on special occasions.<br>
+                나는 특별한 행사에 정장 차림을 한다.<br><br>
+                (4) My family often goes out to dinner.<br>
+                나의 가족은 종종 외식을 한다.<br><br>
+                (5) I use a calendar to remember every anniversary.<br>
+                나는 모든 기념일을 기억하기 위하여 달력을 이용한다.<br><br>
+                (6) While some people prefer to cook and eat their meals at home, I like to eat out.<br>
+                어떤 사람들은 집에서 요리해 먹는 것을 선호하는 반면, 나는 외식하는 것을 좋아한다.<br><br>
+                [여행]<br>
+                (1) It is recommended that you travel with a friend for safety reasons.<br>
+                안전상의 이유로 친구와 함께 여행하는 것이 권장된다.<br><br>
+                (2) I met a variety of people from all over the world while traveling.<br>
+                나는 여행하는 동안 전 세계에서 온 다양한 사람들을 만났다.<br><br>
+                (3) Some people prefer to live in one place throughout their entire lives.<br>
+                어떤 사람들은 평생 한곳에서 사는 것을 선호한다.<br><br>
+                (4) Government officials, like diplomats, tend to move around the world.<br>
+                외교관 같은 정부 관료들은 세계 여기저기를 돌아다니는 경향이 있다.<br><br>
+                [즐거운 경험]<br>
+                (1) The job fair was a pleasant experience.<br>
+                취업 박람회는 즐거운 경험이었다.<br><br>
+                (2) I have many unforgettable memories from the trip.<br>
+                나는 그 여행에 대한 잊을 수 없는 추억을 많이 가지고 있다.<br><br>
+                (3) I quit my job because I wanted to take a break.<br>
+                나는 휴식을 취하고 싶었기 때문에 그 일을 그만두었다.<br><br>
+                [도움1 – 대가족, 부모바쁨]<br>
+                ex) my family is very large because we live together with my grandfather and grandmother. Unfortunately, my parents are so busy because they are not wealthy. I usually ask my friend for help, because he knows my situation very well and always helps me<br><br>
+                [도움2 – 할머니할아버지 아픔]<br>
+                ex) For example, my family is very large because we live together with my grandfather and grandmother. So we have to take care of them. In this case, I usually ask my friends for help, because he know my situation very well and always help me<br><br>
+                [도움3-개인성]<br>
+                ex) when I was at high school. my grades were very bad. At that time, my parents wanted to change my attitude by giving some rewards. So, they promised me to buy a new laptop for better grades. It was effective , because I started to study a lot and got good scores after that.<br><br>
+                [도움4성적]<br>
+                ex) when I was at high school. I had a hard time getting good scores on several exams. One day, I asked my teacher for help. He gave me tons of advice on how to study effectively. It was really helpful and I did very well on the final.<br><br>
+                [곤란-약속, 교통정체]<br>
+                ex) I was going to the restaurant for meet to a boyfriend. But, I was too late because of heavy traffic that I couldn’t expect. Unfortunately, my boyfriend was so upset and we had a big argument about it. So, I should’ve left early from my home.<br><br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="장소">[장소]</h1>
+            <p>[도시/시골]<br>
+                (1) Paris is a crowded city with torists from all over the world.<br>
+                파리는 전 세계에서 온 관광객들로 복잡한 도시이다.<br><br>
+                (2) I like to visit small towns in the countryside because of the scenery.<br>
+                나는 경치때문에 시골의 작은 마을들을 방문하는 것을 좋아한다.<br><br>
+                (3) Rural areas are good places for outdoor activities.<br>
+                시골은 야외 활동을 하기에 좋은 장소이다.<br><br>
+                [우리 나라]<br>
+                (1) South Korea has many historic places.<br>
+                한국은 많은 역사적인 장소를 가지고 있다.<br><br>
+                (2) Jeonju is famous for bibimbap.<br>
+                전주는 비빔밥으로 유명하다.<br><br>
+                (3) A must-see place in Seoul is Gyeongbok Palace.<br>
+                서울에서 꼭 가봐야 하는 곳은 경복궁이다.<br><br>
+                (4) At my parents' house, I fill my time with leisure activities, such as reading or watching TV.<br>
+                부모님 댁에서 나는 독서나 텔레비전 보기와 같은 여가 활동을 하며 시간을 보낸다.<br><br>
+                [다른나라]<br>
+                (1) Hanoi is an exotic place that is different from Seoul.<br>
+                하노이는 서울과는 다른 이국적인 장소이다.<br><br>
+                (2) Manhattan is the most cosmopolitan area of New York.<br>
+                맨하튼은 뉴욕에서 가장 국제적인 지역이다.<br><br>
+                (3) Barcelona has a lot of unique architecture designed by Gaudi.<br>
+                바르셀로나에는 가우디가 디자인한 독특한 건축물이 많다.<br><br>
+                [도서관]<br>
+                ex) I often go to the library because it's very quite and comfortable. I can stay focused for a long time and study more productively.<br><br></p>
+        </article>
+        </section>
+
+
+        <aside id="main_aside">
+            <div class="tab_item">
+                <ul>
+                    <li><a href="#인물">인물</a></li>
+                    <li><a href="#물건">물건</a></li>
+                    <li><a href="#사건">사건</a></li>  
+                    <li><a href="#장소">장소</a></li>  
+                    
+                </ul>
+            </div>
+        </aside>
+        </div>
+        <footer id="main_footer">
+            <h1>TOEFL SPEAKING AND WRITING</h1>
+            <address>Expressions and tips</address>
+        </footer>
+    </body>
+</html>

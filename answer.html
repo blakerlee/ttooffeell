@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>answer</title>
+        <link href∫="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" 
+                rel="stylesheet" type="text/css"/><!--웹에서 폰트 가져오기-->
+
+        <style>
+            #title{
+                    font-family: 'Yellowtail', cursive;
+                    font-size: larger;}
+                </style><!--타이틀 코드-->        
+
+        <style>
+            *{ margin: 0; padding: 0;}
+            body{ font-family: sans-serif;}
+            li{ list-style: none;}
+            a{ text-decoration: none;}
+            img{ border: 0;}
+        </style><!--초기화코드-->
+
+        <style>
+            #main_header{
+                width: 960px;
+                margin: 0 auto;
+                height: 160px;
+                position: relative;  
+            }
+            #main_header > #title{
+                position: absolute;
+                left: 20px; top: 30px;
+            }
+            #main_header > #main_gnb{
+                position: absolute;
+                right: 0; top: 0;
+            }
+            #main_header > #main_lnb{
+                position: absolute;
+                right: 0; bottom: 10px;
+            }
+        </style><!--main_header(제목,gnb,lnb 위치조정)-->
+        <style>
+            #main_gnb > ul{overflow: hidden;}
+            #main_gnb > ul > li{float: left;}
+            #main_gnb > ul > li > a{
+                display: block;
+                padding: 2px 10px;
+                border: 1px solid black;
+                
+            }
+            #main_gnb > ul > li > a:hover{
+                background: black;
+                color: white;
+            }
+            #main_gnb > ul > li:first-child > a{ border-radius: 10px 0 0 10px;}
+            #main_gnb > ul > li:last-child > a{ border-radius: 0 10px 10px 0;}
+        </style>
+               <style>
+                #main_lnb > ul{overflow: hidden;}
+                #main_lnb > ul > li{float: left;}
+                #main_lnb > ul > li > a{
+                    display: block;
+                    padding: 10px 20px;
+                    border: 2px solid black;
+                }
+                #main_lnb > ul > li > a:hover{
+                    background: black;
+                    color: white;
+                }
+                #main_lnb > ul > li:first-child > a{ border-radius: 10px 0 0 10px;}
+                #main_lnb > ul > li:last-child > a{ border-radius: 0 10px 10px 0;}
+            </style>
+        <style>
+            #content{ 
+                width: 960px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+        </style><!--content코드-->
+
+        <style>
+            #main_section{
+                width: 750px;
+                float: left;
+                border: 1px solid black;
+            }
+            #main_aside{ 
+                position: relative;
+                width: 200px;
+                float: right;
+                border: 1px solid black;
+
+
+            }
+        </style><!--section과aside나누기-->
+
+        <style>
+            #main_section > article.main_article{ 
+                margin-bottom: 10px;
+                padding: 20px;
+            }
+        </style><!--section 단락 별로 공간 주기-->
+        
+        <style>
+            input:nth-of-type(1){ display: none;}
+            input:nth-of-type ~ div:nth-of-type{display: none;}
+            input:nth-of-type(1):checked ~ div:nth-of-type(2){ display: none;}
+            
+            input:nth-of-type(2){ display: none;}
+            input:nth-of-type ~ div:nth-of-type{display: none;}
+            input:nth-of-type(2):checked ~ div:nth-of-type(1){ display: none;}
+
+            section.buttons{ overflow: hidden;}
+            section.buttons > label {   display: block;
+                                        float: left;
+                                        width: 100px; height: 30px;
+                                        line-height: 30px;
+                                        text-align: center;
+                                        box-sizing: border-box;
+                                        border: 1px solid black;
+                                        background: white;
+                                        color: black;
+                                    }
+            input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1){ background: black; color: white;}
+            input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2){ background: black; color: white;}
+        </style>
+        <style>
+            #main_footer{
+                width: 960px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                padding: 10px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="main_header">
+            <div id="title">
+                <h1>TOEFL</h1>
+                <h2>TEMPLATE</h2>
+            </div>
+            <nav id="main_gnb">
+                <ul>
+                    <li><a href="home.html">홈</a></li>
+                    <li><a href="https://dict.naver.com" target="blank">네이버사전</a></li>
+                    <li><a href="http://www.daum.net" target="blank">심심할때보는영상</a></li>
+                    <li><a href="http://www.youtube.com" target="blank">유튜브</a></li>
+                </ul>
+            </nav>
+            <nav id="main_lnb">
+                <ul>
+                    <li><a href="answer.html">주제별답변</a></li>
+                    <li><a href="school.html">학교관련표현</a></li>
+                    <li><a href="noun.html">명사표현</a></li>
+                    <li><a href="lecture.html">강의표현</a></li>
+                    <li><a href="opinion.html">의견표현</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="content">
+        <section id="main_section">
+        <article class="main_article">
+            <h1 id="과목">[과목]</h1>
+            <p>- can choose among a variety of majors<br>
+                some people are bad at math but great at art -> can major in art<br>
+                - some student want to just gain knowledge<br>
+                learn about history/literature but X actually use it professionally<br>
+                 </p>
+        </article>
+        <article class="main_article">
+            <h1 id="성적">[성적]</h1>
+            <p>- past grades not important for college success<br>
+                some people who didn't do well in high school do great in college<br>
+                 </p>
+        </article>
+            <article class="main_article">
+            <h1 id="직업">[직업]</h1>
+            <p>- job that gives personal satisfactioin feel good about oneself<br>
+                happy at work and in life<br>
+                - experienced teacher is more learn<br>
+                know how to teach and make it easier to understand<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="과제">[과제,업무]</h1>
+            <p>- focusing on one thing is better quality<br>
+                can be distracted if do many things at once -> low quality<br>
+                - finish faster<br>
+                get stressed trying to complete many things at once -> take longer time<br>
+                - working alone more control over work<br>
+                can decide schedule and pacing of tasks<br>
+                - stay focused<br>
+                X distracted by the other team members<br>
+                - direct experience strongly retained in memory<br>
+                engages physically, mentally and emotionally<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="건축">[건축]</h1>
+            <p>- can learn from old bilding<br>
+                teaches us about the history of architecture<br>
+                - old bilding can attract tourist<br>
+                many foreigners visit korean palaces<br>
+                </p>
+        </article>
+        <article class="main_article">
+            <h1 id="집">[집]</h1>
+            <p>- can study since quite<br>
+                noise from others disturb my concentration<br>
+                - reduce stress<br>
+                - flexible<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="도서관">[도서관]</h1>
+            <p>- I often go to the library because it's very quite and comfortable. I can stay focused for a long time and study more productively.<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="돈">[돈]</h1>
+            <p>- Because, money is very important to me. For example my parents always work hard and come back home too late. So if I make huge money, I can contribute to my family’s living, and my parents would be happy about that.<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="휴식">[휴식]</h1>
+            <p>- risk getting distracted<br>
+                many student end up X going to college after a year off<br>
+                - get behind peers<br>
+                others your age are making progress toward degree<br>
+                - more well rounded<br>
+                taking a variety of courses is essential for comprehensive education<br>
+                - may find other taients and interests<br>
+                taking other courses may change what they want to do as job<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="쇼핑">[쇼핑]</h1>
+            <p>- internet shopping more cheaper<br>
+                always on sale and accumulate reserve which can be used on next purchase<br>
+                - internet shopping more convenient<br>
+                dont have to go to store -> more free time to do other things<br>
+                - self made is not good quality<br>
+                decent present from store would give more satisfaction<br>
+                - no time to make present<br>
+                too busy studying/working these days<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="어린아이">[어린아이]</h1>
+            <p>- learn languages more quickly during critical period<br>
+                peak effect between infancy and early childhood<br>
+                - children are more open to learning new things<br>
+                X have adult prejudices<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="역사">[역사]</h1>
+            <p>- develop an appreciantion for where our culture came from<br>
+                feel sense of onnection without ancestors<br>
+                - can avoid mistakes our ancestors made<br>
+                korea: economic isolation in past vs now participate in global economy<br>
+                 </p>
+        </article>
+        <article class="main_article">
+            <h1 id="여행">[여행]</h1>
+            <p>- air, water, land<br>
+                learn about other country<br>
+                - more exciting life<br>
+                a lot of off-campus activation<br>
+                - more opportunity<br>
+                meet people from various countries and backgrounds<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="운동">[운동]</h1>
+            <p>- don't have apititude for sports<br>
+                love soccer, but poor at it<br>
+                - don't want to get hurt<br>
+                many sports involve physical contact -> risk of injuries<br>
+                - motivating<br>
+                provides clear goals, student do best to win<br>
+                - learn to play fair<br>
+                sports follow strict rules -> healthy competition<br>
+                - health benefits<br>
+                stretch and exercise -> better care<br>
+                - sport<br>
+                pleasurable, fun -> stress, relief, break<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="친구">[친구]</h1>
+            <p>- many interesting people around the world<br>
+                don't want to limit acquaintances to just a few<br>
+                - new people can become good friends<br>
+                met some of my best friends in recent years<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="계획">[계획]</h1>
+            <p>- plan for future can get ready for unexpected events<br>
+                my brother don't save money, car broke down but no money to fix<br>
+                - can help people achieve goals<br>
+                careful planning -> make people work toward a goal step by step<br>
+                - hasty decisions lead to mistakes<br>
+                bought clothes hastily -> don't have dollor for textbooks<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="과학기술">[과학기술]</h1>
+            <p>- cell phones
+                can contact others no matter where they are<br>
+                help in making friends. can send text message to friends and call each other<br>
+                when children have problems, they can ask parents for help right away.<br>
+                - transportation<br>
+                takes people to faraway places in short time<br>
+                - smartphones, internet<br>
+                access news instantaneously<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="조언">[조언]</h1>
+            <p>- learn from others' experience<br>
+                can gain knowledge from experienced people like parents and teachers<br>
+                - receive support and sympathy<br>
+                can feel better by talking without other people in hard times<br>
+                - get advice other than just academic<br>
+                provide personal advice form experience of teaching many people.<br>
+            </p>
+        </article>
+        <article class="main_article">
+            <h1 id="refresh">[refresh]</h1>
+            <p>These days, I spend most of my time studying and working every day, So I think I need to have some time to refresh myself like this. It helps me relieve stress and clear my head.</p>
+        </article>
+        <article class="main_article">
+            <h1 id="socialize">[socialize]</h1>
+            <p>It is the perfect opportunity to socialize with others. I could have more chances to meet diverse people, and learn about them. I think it’s always great to make new friends. I’m sure it will help improve my social skills, and broaden my perspectives toward the world as well.</p>
+        </article>
+        <article class="main_article">
+            <h1 id="valuablelessons">[valuable lessons]</h1>
+            <p>I can learn many valuable lessons. These are not the same as something I can learn from books and these things can actually have a great impact on my life.</p>
+        </article>
+        <article class="main_article">
+            <h1 id="connectpeople">[connect people]</h1>
+            <p>
+                : 누군가 부당한 일을 호소하면 사람들이 도와줌<br>
+                (If someone appealed unfair things to the online, people want to give a helping hand)<br>
+                : 우연히 들린 공원에서 만난 사람이 현재 연인이 되었음<br>
+                (Last year, I take a walked in the park and met a man accidentally. The meeting make us lovers)<br>
+                : 더 높은 자리로 갈수록 지위가 높은 사람을 만날자리가 생김<br>
+                (The higher position make a chance to talk with other people who have highest position)<br>
+                : 다양한 사람들이 내 게시글을 보고 연락하거나 의견 교환 가능<br>
+                (All types of people can see my writing and discuss about that)<br>
+                : 작년에 친해진 선배가 공부에 대한 조언을 해줌<br>
+                (The senior who got close last year, gave me good advise about next level courses)<br>
+                : 새로운 장소인만큼 더 다양한 사람들과 교류할 수 있음<br>
+                (The new place is a chance to exchange with more diverse people)<br>
+                : 많은 사람들을 만나면서 인간관계를 배울 수 있음<br>
+                (Meeting a lot of people can learn about human relationship)<br>
+                : 성공적인 예술가 대부분은 사람들과 커뮤니티를 잘 하는 사람들이었다<br>
+                (The most of successful artist had good comunication skill with people)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="relievestress">[relieve stress]</h1>
+            <p>: 룸메가 화장실을 더럽게 써서 너무 기분이 나빴음
+                (Sometime my rommate use the restroom so dirtiy, smelly and messy but she never clean up there, so I really stressful)<br>
+                : 자신이 좋아하지 않은 일로 혼나게 되면 스트레스가 됨<br>
+                (Having a bad time by the dislike job is really stressful)<br>
+                : ppt 발표 시간이었을때, 교수님에게 평가 받는 자리는 나에게 상당히 부담스럽고 끔찍했다<br>
+                (When I present my assingment, evaluation of professor are uncomfortable and terrible)<br>
+                : 그들의 경기나 노래를 들으면 스트레스가 풀림<br>
+                (Their activities like a sports play and singing on the stage make me happy and feel satisfaction)<br>
+                : 우산이나 바람막이가 필요 없어서 날씨 걱정 안해도 됨<br>
+                (I didn't need the umbllera and cardigan anymore because the weather is so nice for take a walk to the park)<br>
+                : 이동하다 배가 고프면 바로 음식점으로 갈 수 있어 이동하는데 스트레스가 쌓이지 않음<br>
+                (Whenever what I want to eat some food, I can move to the restaurant, So it is make confortable and relieve stress)<br>
+                : 조기교육은 성인이 되고 난 후에 공부하는 것보다 학습의 효과를 더 쉽고 창의적으로 받아들임<br>
+                (The early education of childhood make to improve the learning ability more easily and creative than adulthood)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="savemoney">[save money]</h1>
+            <p>: 야외활동은 음식 사먹고 이동하는 것도 돈이듬<br>
+                (When I outdoor activity like camping, I spend lots of money for buying stuff and eating food)<br>
+                : 실제로 보는것보다 훨씬 저렴함<br>
+                (It's really cheap than watching in off-line)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="savetime">[save time]</h1>
+            <p>: 더 많은 수업을 들으면 빠르게 학점을 얻어 조기졸업하거나 조기 취업이 가능해짐<br>
+                (The more classes get more credit quickly. Then it is make possible to early graduation)<br>
+                : 메세지를 읽을 때까지 기다리지 않아도 됨<br>
+                (Don't need to wait until taking the messege from partner)<br>
+                : 직접 만날 필요 없기 때문<br>
+                (Because it couldn't do with face time)<br>
+                : 감정을 가라앉히고 상황을 파악할 시간이 있기 때문에 더욱 건설적인 대화를 할 수 있음<br>
+                (Having some time that relieve my feeling and take in a situation make to lead more constructive dialogue)<br>
+                : 한명이 과제를 안내면 모두의 결과가 늦게 나올것임<br>
+                (If someone do not submit a asignment in time, all of student's result come out to late)<br>
+                : 결정을 내려야 할 때 음식주문이나 청소등 의견 충돌이 없음<br>
+                (When we make some decision, we have no problem about a clash of views like a order to food and clean to domitory)<br>
+                : 내가 원하지 않는역에 정차할 필요없이 바로 갈 수 있음<br>
+                (I can go anywhere without need to stop the station that I don't want)<br>
+                : 가까운 공원, 주차장 사용하는것은 먼곳에 갈 필요가 없기 때문에 시간 절약에 도움됨<br>
+                (Using a near by park and parking lot make to save time due to do not have to go far away)<br>
+                : 학교까지 이동하는데 시간이 오래 걸리지 않음<br>
+                (It does not take long time to move to the school)<br>
+                : 계획을 세우지 않으면 시간을 제대로 사용하지 못하고 낭비할 수 있음<br>
+                (If do not make a plan, I just waste my time thoughtlessly)<br>
+                : formal look은 디자인이 한정적이고 단순해서 옷 코디에 시간을 많이 안씀<br>
+                (The formal look does not spent lots of styling time because the design is simple and limited)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="comfortable">[comfortable]</h1>
+            <p>: 조용히 공부하고 책 읽는 분위기는 집중력을 높이고 편안한 장소가 됨<br>
+                (The atmosphere that reading books and studying quietly be able to form a cozy place)<br>
+                : 오랫동안 알게 된 사이는 서로의 생활습관도 비슷하게 되어 스트레스를 덜 받음<br>
+                (Lifelong relationship have getting stress more little because their lifestyle was to be similar than before)<br>
+                : 문화 생활을 즐기는데 편리성을 줌<br>
+                (It is convenitent about enjoy the culture life)<br>
+                : 익숙한 장소에서 익숙한 사람들과 보내는 시간은 즐거운 안정감을 줌<br>
+                (Spending time with familiar people in cozy house gave me enjoyable stability and happiness)<br>
+                : 종이를 만지고 직접 넘기는 감각을 사람들은 여전히 좋아함<br>
+                (People still like the feeling that touch and turn a page)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="satisfication">[satisfication]</h1>
+            <p>: 내 친구는 어렸을적 부터 소설가가 되기를 꿈꿔왔다. 꽤 어려운 일들이 있었지만 결국 자신의 삶을 엮은 에세이가 출간되었다. 친구는 책이 출간될 때 자신의 삶이 보람참을 느꼈다고 말함<br>
+                (My friend eager to be auther since early years. She suffered so many problem, but finally her book was published. She said that her life filled satisfaction and worthful)<br>
+                : 서로에게 의지할 수 있고 자신의 부족한 면도 감싸줌<br>
+                (It was willing to support each other and filled the insufficient part)<br>
+                : 어렵고 큰 과제는 힘들지만 완수하게 되면 노력이 주는 만족감을 느낄 수 있어서 기분이 좋음<br>
+                (Even though huge problem make having hard time, there is delightful satisfaction after successfully finished that)<br>
+                : 돈을 모아두면 그 자체만으로도 심리적으로 만족감을 줌<br>
+                (Earning and saving money be able to make people a feeling of happiness and comfortable)<br>
+                : 사람들은 광고하는 물건을 가지면 만족감을 얻을것이라 생각함<br>
+                (People tend to think that advertising goods could gave us somewhat happiness)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="moreinformation">[more information]</h1>
+            <p>: 직접 만나서 대화하는 것은 메세지로는 표현되지 않은 어조나 더 많은 정보를 빠르게 습득하고 이해할 수 있음<br>
+                (Talking on face to face, It is able to facilitate to understand and get faster a lot of information that messege can not express well)<br>
+                : 고등학생때 수학공부를 했는데 나에게는 너무 어려웠다. 다행히도 친구가 어떻게 문제를 푸는지, 몰랐던 부분이 무었인지에 대한 여러 의견을 주고받을 수 있었다. 이러한 과정을 통해 나의 수학실력을 크게 향상시킬 수 있었다.<br>
+                (When I was high school, I had some difficulte mathematical problems. Fortunately, my schoolmate gave me huge help how can solve that, what is the serious part. Also we had been tossed around so many oppinion. Although I spent a lot of time, but improved my mathematical skill.)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="preparefuture">[prepare future]</h1>
+            <p>: 내 여동생은 교통사고를 겪었지만 모아 놓은 돈을 사용해서 무사히 치료 받을 수 있었다<br>
+                (My sister was had a traffic accident. Fortunately she had a lots of her savings and recieved medical treatment in time)<br>
+                : 직업을 얻기 위해 자격증 시험을 신청하거나 인턴쉽을 준비하는 등 미리 계획할 수 있음<br>
+                (Planing ahead like a applying the certification test or preparing the internship be helpful to get the occpation)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="flexible">[flexible]</h1>
+            <p>: 상사의 감시가 없으면 직원은 스스로 업무를 수행하며 업무 능률이 올라가게 됨<br>
+                (If there is not supervisor's observation, employee could perform a task oneself and improve the work efficiency<br>
+                the task could be planned for condition of employee)<br>
+                : 문제를 여러가지 방향으로 해석하고 답을 만들 수 있음<br>
+                (The problem is agonized in many ways and employee could make a creative solution)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="learnwisdom">[learn wisdom]</h1>
+            <p>: 인간관계에 대한 책은 주변 사람들을 어떻게 대해야 하는지 여러가지 조언을 알려준다<br>
+                (The book about human relationship give some advice how treating around people)<br>
+                : 살아가면서 겪는 힘들고 괴로운 일들이 많다. 우리가 혼란속에서 정신을 잃지 않도록 책을 읽으면서 책 속의 지혜를 얻을 수 있어야 한다<br>
+                (There are many disappointments and painful experiences in our lives. We should read and get wisdoms in several books for keep fresh mind)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="learneffect">[learn how to effect]</h1>
+            <p>: 자기가 좋아하는 연예인처럼 유명해지고 싶어서 사람들은 더 열심히 노력하게 됨<br>
+                (People want to be famous and capable person like a role model who they love. So that makes to hard-working people)<br>
+                : 노력하면 오는 보상을 통해 노력의 순환을 만들어낸다<br>
+                (Circle of effort is made through taking reward from work hard)<br>
+                : 사람들은 불이익을 받고 싶어하지 않기 때문에 마감기한을 잘 지킬 것임<br>
+                (People don't want to take disadvantage, so submitting assignment within the deadline is very important to them)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="rarechance">[rare opportunity]</h1>
+            <p>: 생일은 언제든 챙겨줄 수 있지만 승진할 기회는 한번 갖기도 힘듬<br>
+                (The birthday be able to celebrate anytime, but opportunity for advancement is barely not)<br>
+                : 유명한 기업에 입사할 기회는 쉽게 오는게 아님<br>
+                (The opportunity that join to famous company is not often)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="stimulatedesire">[stimulate desire]</h1>
+            <p>: 자극적이고 반복적인 노출은 이성적인 판단을 흐리게 하며 합리적인 결정을 하는데 방해가 됨<br>
+                (Stimulating and repetitive exposure make to hazy the rational judgment and disturb to think a reasonable decision)<br>
+                : 광고는 끝없는 욕구에 압도된 사람들을 자극하고 이끌어간다<br>
+                (Advertising stimulate and leads to many people being overwhelmed by the endless need )<br>
+                : 광고가 흡연을 멋지고 매력적인 것으로 그린다<br>
+                (The advertisements depict smoking as glamorous and attractive)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="healthy">[healthy]</h1>
+            <p>: 계속 온도가 바뀌면 사람은 쉽게 감기에 걸림
+                (Changing in temperature a few times a day, people get a cold easily)<br>
+                (Childrens who watch a lot of TV tend to strain on their neck and eyes)<br>
+                : 패스트 푸드는 가격이 싸고 야채는 비싸서 가난한 사람들은 건강해지는 것이 힘들다<br>
+                (Fastfood is quick and cheap rather than vegetable. That could be caused unhealthy lifestyle especially busy and poor people)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="creative">[creative]</h1>
+            <p>: 로봇은 상상을 할 수 없어서 비행기나 스마트폰 같은 혁신적 물건을 개발 할 수 없을 것이다<br>
+                (Robots only progress to accept algorithm, so the innovative things like a airplane and smartphone can not were made by them)<br>
+                : 생각지도 못한 새로운 해결법이나 아이디어가 나올 수 있음<br>
+                (It could be appear new creative idea or solution that no one thought)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="freedom">[freedom]</h1>
+            <p>: 나를 아는 사람이 없어서 눈치 안봐도 됨<br>
+                (The place that no one know me could not with walk on eggshells)<br>
+                : 집을 자유롭게 꾸미고 노래를 크게 틀 수 있음<br>
+                (Just I want, I can decorating the house with my way and making to turn the volume up)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="useful">[useful]</h1>
+            <p>: 스마트폰은 요리, 경제, 과학 등 생활에 유용한 지식이 많음
+                (The smartphone have a lot of useful knowledge like a cook, economy and science)<br>
+                : 전화, 시간, 계산 등 많은 기능을 사용할 수 있음<br>
+                (It can used to functions like a phone call, time and calculate)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="helpmemo">[help memorize]</h1>
+            <p>: 관련된 기억을 더 오래 유지 시켜주고 생각을 더 발전시킬 수 있는 기회가 됨<br>
+                (It is to be a opportunity that keep to long the relevent memories and improve my thought)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="lessmistake">[less mistake]</h1>
+            <p>: 평소에 스케쥴을 작성하지 않는 내 남동생은 제출기한이 지난 뒤 과제가 있다는 것을 깨달았다. 그래서 그는 그 과목에서 C를 맞았다<br>
+                (My brother who does not make a schdule realized the asignment that already passed the submission deadline. So he got bad grade at the course)<br>
+                : 잘못된 말이나 행동을 표현할 가능성이 줄어듬<br>
+                (It decrease the possibilitie to express the worng words and actions)<br>
+                 </p>
+        </article>
+        <article class="main_article">
+            <h1 id="earnmoney">[earn more money]</h1>
+            <p>: 고금리은행에 돈을 저축할수록 이자가 쌓임<br>
+                (Your money would earn more in a high-interest account)<br>
+                : 재능있는 예술가는 쉽게 유명해지며 사람들은 유명한 사람의 그림을 비싸게 사고싶어함<br>
+                (The talented artist make a name for oneself and people would like to pay the piece of aritst)<br>
+                 </p>
+        </article>
+        <article class="main_article">
+            <h1 id="stimulate">[stimulate competitive]</h1>
+            <p>: 사람들이 도서관을 가는 이유는 열심히 공부하는 사람들이 많기 때문이다<br>
+                (The reason that people go to the library is in other to take the stimulation from hard-working students)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="happiness">[should protect for minimum happiness]</h1>
+            <p>: 노력해도 돈을 벌 수 없다는 사실은 삶을 영원히 불행하게 만든다<br>
+                (The poor people never save money and the fact make unhappiness in whole life )<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="emotion">[connect emotional]</h1>
+            <p>: 아이와 함께 생활하기 때문에 정서 발달에 많은 영향 미침<br>
+                (Living with parents can affect to children's emotion development)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="danger">[dangerous contents]</h1>
+            <p>: 아이가 보면 안되는 영화나 자극적인 콘텐츠는 정서 발달에 좋지 않다<br>
+                (The movie or inappropriate contents can affect to children's emotion development)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="funny">[funny]</h1>
+            <p>: TV로 표현할 수 없는 더 깊고 넓은 상상의 세계를 맛볼 수 있음<br>
+                (The novel can express more deep and wide world thlough the imagine than TV)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="sage">[safe]</h1>
+            <p>: 웅덩이가 있거나 뾰족한 돌부리에 걸리면 큰 사고가 날 수 있음<br>
+                (The serious accident just happen by a little sharped rock or mud pools)<br></p>
+        </article>
+        <article class="main_article">
+            <h1 id="access">[accessibilty]</h1>
+            <p>: 도로를 까는 것은 자동차가 길을 해매지 않고 안전하게 찾아올 수 있다는 이점이 있다<br>
+                (Paving a road is a advantage that the car can move into the city without getting lost)<br></p>
+        </article>
+        </section>
+
+
+        <aside id="main_aside">
+            <input type="radio" id="car" name="tab" checked="checked"/>
+            <input type="radio" id="phone" name="tab"/>
+            <section class="buttons">
+                <label for="car">기본</label>
+                <label for="phone">자주쓰는</label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <li><a href="#과목">과목</a></li>
+                    <li><a href="#성적">성적</a></li>
+                    <li><a href="#직업">직업</a></li>
+                    <li><a href="#과제">과제,업무</a></li>
+                    <li><a href="#건축">건축</a></li>
+                    <li><a href="#집">집</a></li>
+                    <li><a href="#도서관">도서관</a></li>
+                    <li><a href="#돈">돈</a></li>
+                    <li><a href="#휴식">휴식</a></li>
+                    <li><a href="#쇼핑">쇼핑</a></li>
+                    <li><a href="#어린아이">어린아이</a></li>
+                    <li><a href="#역사">역사</a></li>
+                    <li><a href="#여행">여행</a></li>
+                    <li><a href="#운동">운동</a></li>
+                    <li><a href="#친구">친구</a></li>
+                    <li><a href="#계획">계획</a></li>
+                    <li><a href="#과학기술">과학기술</a></li>
+                    <li><a href="#조언">조언</a></li>
+
+                    
+                </ul>
+            </div>
+            <div class="tab_item">
+                <ul>
+                    <li><a href="#refresh">refresh</a></li>
+                    <li><a href="#socialize">socialize</a></li>
+                    <li><a href="#valuablelessons">valuable lessons</a></li>
+                    <li><a href="#connectpeople">connect people</a></li>
+                    <li><a href="#relievestress">relieve stress</a></li>
+                    <li><a href="#savemoney">save money</a></li>
+                    <li><a href="#savetime">save time</a></li>
+                    <li><a href="#comfortable">comfortable</a></li>
+                    <li><a href="#satisfication">satisfication</a></li>
+                    <li><a href="#moreinformation">more information</a></li>
+                    <li><a href="#preparefuture">prepare future</a></li>
+                    <li><a href="#flexible">flexible</a></li>
+                    <li><a href="#learnwisdom">learn wisdom</a></li>
+                    <li><a href="#learneffect">learn how to effect</a></li>
+                    <li><a href="#rarechance">rare opportunity</a></li>
+                    <li><a href="#stimulatedesire">stimulate desire</a></li>
+                    <li><a href="#healthy">healthy</a></li>
+                    <li><a href="#creative">creative</a></li>
+                    <li><a href="#freedom">freedom</a></li>
+                    <li><a href="#useful">useful</a></li>
+                    <li><a href="#helpmemo">help memorize</a></li>
+                    <li><a href="#lessmistake">less mistake</a></li>
+                    <li><a href="#earnmoney">earn more money</a></li>
+                    <li><a href="#stimulate">stimulate competitive</a></li>
+                    <li><a href="#happiness">should protect for minimum happiness</a></li>
+                    <li><a href="#emotion">connect emotional</a></li>
+                    <li><a href="#danger">dangerous contents</a></li>
+                    <li><a href="#funny">funny</a></li>
+                    <li><a href="#sage">safe</a></li>
+                    <li><a href="#access">accessibilty</a></li>
+                </ul>
+            </div>
+        </aside>
+        </div>
+        <footer id="main_footer">
+            <h1>TOEFL SPEAKING AND WRITING</h1>
+            <address>Expressions and tips</address>
+        </footer>
+    </body>
+</html>
